@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 0 10px;
+  background: linear-gradient(180deg, #000000 50%, #fffefe 50%);
+  background-image: url(https://www.pixelstalk.net/wp-content/uploads/2016/10/Dollar-Sign-HD-Wallpapers.jpg);
+  background-size:50%;
+  background-position: initial;
+}
+
+::selection {
+  color: #ffffff;
+  background: #FFF;
+}
+
+.wrapper {
+  width: 370px;
+  padding: 30px;
+  border-radius: 5px;
+  background: #14142c;
+  box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+}
+
+.wrapper header {
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.wrapper form {
+  margin: 40px 0 20px 0;
+}
+
+form :where(input, select, button) {
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  background: #000000;
+  color: #000000;
+}
+
+form p {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+form input {
+  height: 50px;
+  font-size: 17px;
+  padding: 0 15px;
+  border: 1px solid #000000;
+  background: #818181;
+}
+
+form input:focus {
+  padding: 0 14px;
+  border: 2px solid #8ceba1;
+  background: #ffffff;
+}
+
+form .drop-list {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.drop-list .select-box {
+  display: flex;
+  width: 115px;
+  height: 45px;
+  align-items: center;
+  border-radius: 5px;
+  justify-content: center;
+  border: 1px solid #000000;
+  background: #FFFFFF;
+  color: #000;
+}
+
+.select-box img {
+  max-width: 21px;
+}
+
+.select-box select {
+  width: auto;
+  font-size: 16px;
+  background: none;
+  margin: 0 -5px 0 5px;
+  color: #000;
+}
+
+.select-box select::-webkit-scrollbar {
+  width: 8px;
+}
+
+.select-box select::-webkit-scrollbar-track {
+  background: #FFF;
+}
+
+.select-box select::-webkit-scrollbar-thumb {
+  background: #118133;
+  border-radius: 8px;
+  border-right: 2px solid #FFFFFF;
+}
+
+.drop-list .icon {
+  cursor: pointer;
+  margin-top: 30px;
+  font-size: 22px;
+  color: #FFF;
+}
+
+form .exchange-rate {
+  font-size: 17px;
+  margin: 20px 0 30px;
+}
+
+form button {
+  height: 52px;
+  color: #fcfcfc;
+  font-size: 17px;
+  cursor: pointer;
+  background: #08531f;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+  background: #008f18;
+}
+
+form button:active {
+  transform: scale(0.95);
+}
