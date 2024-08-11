@@ -13,7 +13,8 @@
   <form action="#">
     <div class="amount">
       <p>Insira a Quantia</p>
-      <input type="text" value="1">
+      <input type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" />
+
     </div>
     <div class="drop-list">
       <div class="from">
